@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Matchvorschau</title>
+		<script src="moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/de-ch.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/lej0dry.css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="vorschau">
+	<div class="left">
+	<div class="datum" id="datum">29</div>
+	<div class="monat" id="monat">November</div>
+	</div>
+<div class="right" id="right">
+	<div class="header">
+		<div class="header-text" id="titel">Heimspielrunde</div>
+		<div class="logo"></div>
+	</div>
+	<div class="ort" id="ort">@Gymnasium Bäumlihof</div>
+	<div class="spiele-container" id="spiele-container">
+		<div class="spiel">
+			<div class="uhrzeit">14:00</div>
+			<div class="paarung">MU19 vs. Handball Birseck</div>
+		</div>
+		<div class="spiel">
+			<div class="uhrzeit">14:00</div>
+			<div class="paarung">MU19 vs. Handball Birseck</div>
+		</div>
+	</div>
+	</div></div>
+<div class="settings">
+	<div class="setconstants">
+		<label for="datum">Datum:</label>
+	<input type="text" id="datum_input" placeholder="17." name="datum"><br>
+		<label for="monat">Monat:</label>
+	<input type="text" id="monat_input" placeholder="Januar" name="monat"><br>
+		<label for="titel">Titel:</label>
+	<input type="text" id="titel_input" placeholder="Heimspielrunde" name="titel"><br>
+		<label for="ort">Ort:</label>
+	<input type="text" id="ort_input" placeholder="Rankhof" name="ort"><br>
+	<button onClick="setconstants()">Set Constants</button><br>
+	<input type="checkbox" id="isheimspielrunde" name="isheimspielrunde">
+		<label for="isheimspielrunde">Heimspielrunde?</label>
+		<br>
+  </div>
+	<div class="getdata">
+	<button onClick="getgames()">Get Games</button>
+	<div class="nextgames-container" id="nextgames-container">
+		</div></div>
+
+	</div>
+
+</body>
+	<script type="text/javascript" src="script.js"></script>
+
+</html>
